@@ -1,0 +1,23 @@
+body {
+    width: 60%;
+}
+.form-1 {
+    background-color: #2C8CBC;
+}
+
+.form-2 {
+    background-color: #860B7E;
+}
+
+.form-3 {
+    background-color: #E3255E;
+}
+
+.container {
+    padding: 5px;
+}
+
+.radio-choices {
+    margin-left: 50px;
+    margin-bottom: -15px;
+}

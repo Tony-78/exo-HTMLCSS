@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <title>Exercice 7</title>
+</head>
+
+<body>
+
+    <form>
+        <fieldset class="form-1">
+            <legend  class="form-1">Votre identité</legend>
+            <div class="container"></div>
+                <label for="surname">1. Nom :</label>
+                <input type="text" id="surname" placeholder="Nom">
+
+                <br>
+
+                <label for="name">2. Prénom :</label>
+                <input type="text" id="name" placeholder="Prénom">
+
+                <br>
+
+                <label for="mail">3. Adresse mail :</label>
+                <input type="text" id="mail" placeholder="Adresse mail">
+            </div>
+        </fieldset>
+    </form>
+
+
+    <form>
+        <fieldset class="form-2">
+            <legend class="form-2">Adresse de livraison</legend>
+            <div class="container">
+                <label for="location">1. Adresse :</label>
+                <textarea name="location" id="location" rows="5"></textarea>
+
+                <br>
+
+                <label for="postal-code">2. Code postal :</label>
+                <input type="text" id="postal-code" placeholder="Code postal">
+
+                <br>
+
+                <label for="town">3. Ville :</label>
+                <input type="text" id="town" placeholder="Ville">
+            </div>
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset class="form-3">
+            <legend class="form-3">Informations de réglement</legend>
+            <div class="container">
+                <label for="credit-card">1. Type de carte bancaire :</label>
+                
+                <br>
+
+                    <div class="radio-choices">
+                        <input type="radio" id="visa" name="type-card" value="VISA">
+                        <label for="visa">VISA</label>
+
+                        <br>
+
+                        <input type="radio" id="mastercard" name="type-card" value="Mastercard">
+                        <label for="mastercard">Mastercard</label>
+                    </div>
+
+                <br>
+                
+                <label for="card-number">2. Numéro de carte :</label>
+                <input type="text" id="card-number" placeholder="Numéro de carte">
+
+                <br>
+
+                <label for="code">3. Code de sécurité :</label>
+                <input type="text" id="code" placeholder="Code de sécurité">
+
+                <br>
+
+                <label for="titular-name">4. Nom du titulaire :</label>
+                <input type="text" id="titular-name" placeholder="Nom du titulaire">
+            </div>
+        </fieldset>
+    </form>
+
+    <input type="submit" value="J'achète !">
+
+</body>
+
+</html>

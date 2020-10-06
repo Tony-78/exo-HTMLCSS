@@ -4,59 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <link href="style.css" rel="stylesheet">
-    <title>Exercice 7</title>
+    <title>Exercice 7 = Formulaire</title>
 </head>
 
 <body>
 
-    <form>
-        <fieldset class="form-1">
-            <legend  class="form-1">Votre identité</legend>
-            <div class="container"></div>
-                <label for="surname">1. Nom :</label>
-                <input type="text" id="surname" placeholder="Nom">
+    <form method="post" action="">
+        <fieldset id="identity">
+            <legend class="identity">Votre identité</legend>
+            <ol>
+                <li>
+                    <label for="surname">Nom :</label>
+                    <input type="text" id="surname" name="surname" placeholder="Durand">
+                </li>
 
-                <br>
+                <li>
+                    <label for="name">Prénom :</label>
+                    <input type="text" id="name" name="name" placeholder="Jean">
+                </li>
 
-                <label for="name">2. Prénom :</label>
-                <input type="text" id="name" placeholder="Prénom">
-
-                <br>
-
-                <label for="mail">3. Adresse mail :</label>
-                <input type="text" id="mail" placeholder="Adresse mail">
-            </div>
+                <li>
+                    <label for="mail">Adresse mail :</label>
+                    <input type="text" id="mail" name="mail" placeholder="azerty@azerty.com">
+                </li>
+            </ol>
         </fieldset>
-    </form>
 
+        <fieldset id="shipping">
+            <legend class="shipping">Adresse de livraison</legend>
+            <ol>
+                <li>
+                    <label for="location">Adresse :</label>
+                    <textarea name="location" id="location" rows="5"></textarea>
+                </li>
 
-    <form>
-        <fieldset class="form-2">
-            <legend class="form-2">Adresse de livraison</legend>
-            <div class="container">
-                <label for="location">1. Adresse :</label>
-                <textarea name="location" id="location" rows="5"></textarea>
+                <li>
+                    <label for="postal-code">Code postal :</label>
+                    <input type="text" id="postal-code" name="postal-code" placeholder="75000">
+                </li>
 
-                <br>
-
-                <label for="postal-code">2. Code postal :</label>
-                <input type="text" id="postal-code" placeholder="Code postal">
-
-                <br>
-
-                <label for="town">3. Ville :</label>
-                <input type="text" id="town" placeholder="Ville">
-            </div>
+                <li>
+                    <label for="town">Ville :</label>
+                    <input type="text" id="town" name="town" placeholder="Paris">
+                </li>
+            </ol>
         </fieldset>
-    </form>
 
-    <form>
-        <fieldset class="form-3">
-            <legend class="form-3">Informations de réglement</legend>
-            <div class="container">
-                <label for="credit-card">1. Type de carte bancaire :</label>
-                
-                <br>
+        <fieldset id="payment">
+            <legend class="payment">Informations de réglement</legend>
+            <ol>
+                <li>
+                    <div>Type de carte bancaire :</div>
 
                     <div class="radio-choices">
                         <input type="radio" id="visa" name="type-card" value="VISA">
@@ -68,25 +66,29 @@
                         <label for="mastercard">Mastercard</label>
                     </div>
 
-                <br>
-                
-                <label for="card-number">2. Numéro de carte :</label>
-                <input type="text" id="card-number" placeholder="Numéro de carte">
+                </li>   
 
-                <br>
 
-                <label for="code">3. Code de sécurité :</label>
-                <input type="text" id="code" placeholder="Code de sécurité">
+                <li>
+                    <label for="card-number">Numéro de carte :</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="XXXX XXXX XXXX XXXX">
+                </li>
 
-                <br>
+                <li>
+                    <label for="code">Code de sécurité :</label>
+                    <input type="text" id="code" name="code" placeholder="123456">
+                </li>
 
-                <label for="titular-name">4. Nom du titulaire :</label>
-                <input type="text" id="titular-name" placeholder="Nom du titulaire">
-            </div>
+                <li>
+                    <label for="titular-name">Nom du titulaire :</label>
+                    <input type="text" id="titular-name" name="titular-name" placeholder="Durand">
+                </li>
+
+            </ol>
         </fieldset>
     </form>
 
-    <input type="submit" value="J'achète !">
+    <button type="submit">J'achète !</button>
 
 </body>
 

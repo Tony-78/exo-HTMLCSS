@@ -1,0 +1,50 @@
+#container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(5, 15vh);
+}
+
+#green {
+    background-color: green;
+    grid-area: 1/8/1/1;
+}
+
+#blue {
+    background-color: blue;
+    grid-area: 1/8/1/10;
+}
+
+#red {
+    background-color: red;
+    grid-area: 2/1/4/4;
+}
+
+#orange {
+    background-color: orange;
+    grid-area: 2/4/3/7;
+}
+
+#grey {
+    background-color: grey;
+    grid-area: 2/7/3/10;
+}
+
+#yellow {
+    background-color: yellow;
+    grid-area: 3/4/4/6;
+}
+
+#light-blue {
+    background-color: lightgreen;
+    grid-area: 3/6/4/8;
+}
+
+#dark-orange {
+    background-color: orangered;
+    grid-area: 3/8/4/10;
+}
+
+#dark-blue {
+    background-color: darkslateblue;
+    grid-area: 4/1/6/10;
+}
